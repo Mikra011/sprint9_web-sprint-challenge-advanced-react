@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import axios from 'axios';
+import axios from 'axios'
 
 // Suggested initial states
 const initialMessage = ''
@@ -15,17 +15,6 @@ export default function AppFunctional(props) {
   const [email, setEmail] = useState(initialEmail);
   // THE FOLLOWING HELPERS ARE JUST RECOMMENDATIONS.
   // You can delete them and build your own logic from scratch.
-
-  function getXY() {
-    // It is not necessary to have a state to track the coordinates.
-    // It's enough to know what index the "B" is at, to be able to calculate them.
-  }
-
-  function getXYMessage() {
-    // It is not necessary to have a state to track the "Coordinates (2, 2)" message for the user.
-    // You can use the `getXY` helper above to obtain the coordinates, and then `getXYMessage`
-    // returns the fully constructed string.
-  }
 
   function reset() {
     // Use this helper to reset all states to their initial values.
@@ -87,13 +76,11 @@ export default function AppFunctional(props) {
   }
 
   function onChange(evt) {
-    // You will need this to update the value of the input.
     setEmail(evt.target.value)
   }
 
   function onSubmit(evt) {
-    // Use a POST request to send a payload to the server.
-    evt.preventDefault() // Prevent the default form submission behavior
+    evt.preventDefault() 
     sendDataToServer()
     setEmail('')
   }
