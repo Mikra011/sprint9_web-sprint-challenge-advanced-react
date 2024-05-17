@@ -32,6 +32,7 @@ export default function AppFunctional(props) {
     setCurrentIndex(initialIndex)
     setSteps(initialSteps)
     setMessage(initialMessage)
+    setEmail(initialEmail)
   }
 
   function getNextIndex(direction) {
